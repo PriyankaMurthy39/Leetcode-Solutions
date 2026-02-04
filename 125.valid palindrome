@@ -1,0 +1,7 @@
+class Solution(object):
+    def isPalindrome(self, s):
+       P=""
+       for ch in s:
+         if ch.isalnum():
+            P+=ch.lower()
+       return P==P[::-1]
